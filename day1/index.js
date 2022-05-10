@@ -25,13 +25,13 @@ const server = http.createServer((request, response) => {
   } else if (request.url === '/dogs') {
     response.setHeader('Content-type', 'text/html');
     response.write(
-      '<img width=500 src="http://source.unsplash.com/featured/?dog" />'
+      '<img width=500 src="https://source.unsplash.com/featured/?dog" />'
     );
     response.end();
   } else if (request.url === '/cats') {
     response.setHeader('Content-type', 'text/html');
     response.write(
-      '<img width=500 src="http://source.unsplash.com/featured/?cat" />'
+      '<img width=500 src="https://source.unsplash.com/featured/?cat" />'
     );
     response.end();
   }
